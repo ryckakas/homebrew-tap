@@ -1,25 +1,25 @@
 class Phpcognit < Formula
   desc "Cognitive complexity linter for PHP, as a single static binary"
   homepage "https://github.com/ryckakas/phpcognit"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.0/phpcognit-aarch64-apple-darwin.tar.xz"
-      sha256 "b6c32b61977879ba0562f9bc28c3cc73ac86a5ffad6c2504c32bbbb0a247757d"
+      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.1/phpcognit-aarch64-apple-darwin.tar.xz"
+      sha256 "260689511c2ede5aeffb0d94e537a487d87812d7a925072e20380709eee627a1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.0/phpcognit-x86_64-apple-darwin.tar.xz"
-      sha256 "4532fd927799f316a9f4a9735d194e0ff5e1d3c0d22b7b9898b0daf949f8c60f"
+      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.1/phpcognit-x86_64-apple-darwin.tar.xz"
+      sha256 "82d1a25aa93162398c722d19b6fa95571ab1b3aa27212d266b48dc1a292c27a3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.0/phpcognit-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c288bc55000e959cb5bb4e82d1f3771a179773ccb3e83e6cae155e87e364a498"
+      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.1/phpcognit-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "58215bf806ee42637275318f2052885282850b9c53899bf7169f9cd0a749e52f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.0/phpcognit-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5e9118f1386fa26fc8ed84473de7d398d7b35235138436a3a3d430466c5a6349"
+      url "https://github.com/ryckakas/phpcognit/releases/download/v0.1.1/phpcognit-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "25529e9f0a30045ddd4a96e7a45a07e196ecf6755e51ba0f04097780fd3304aa"
     end
   end
   license "MIT"
