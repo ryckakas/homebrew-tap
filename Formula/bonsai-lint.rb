@@ -1,25 +1,25 @@
 class BonsaiLint < Formula
-  desc "Cognitive complexity linter for PHP, JavaScript, TypeScript and Vue, as a single static binary"
+  desc "Cognitive complexity linter for PHP, JavaScript, TypeScript, Vue and Go, as a single static binary"
   homepage "https://github.com/ryckakas/bonsai-lint"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.2.1/bonsai-lint-aarch64-apple-darwin.tar.xz"
-      sha256 "1f76ed4bca6db7249f458959199ec258673fc199ffcaf9c72fd49dfc33d5f159"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-aarch64-apple-darwin.tar.gz"
+      sha256 "2557aff1d276358d207521110c00a11945fd8e03243c584d4bf03a7f4739d6c4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.2.1/bonsai-lint-x86_64-apple-darwin.tar.xz"
-      sha256 "18d45a5a06f987054afb3ec3c23fe8f7591504aba0ae86f14c5a000569933f3b"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-x86_64-apple-darwin.tar.gz"
+      sha256 "73e945b6173558c5db7ceeb371ac2fb204e0a72250841ca6461f6ecee69868c4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.2.1/bonsai-lint-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "959027b96bb13a65d5a025954eb55bcbc38f4b8429b884b5c49dbaed82aac21c"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "baa2940ed9fcdadc1dd20a5a983f47efc372e22f3438f58c82cb8e515216cae2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.2.1/bonsai-lint-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e042c332559c83fc461d8a6d0dc078ccf6e610a2a3c7d7f00c08234b442ea7fe"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4c3e41151a0edadc3b835a55360768cd7a5824b4946b5fc32c3a3fde67785f6a"
     end
   end
   license "MIT"
