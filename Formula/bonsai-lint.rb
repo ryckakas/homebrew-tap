@@ -1,35 +1,39 @@
 class BonsaiLint < Formula
-  desc "Cognitive complexity linter for PHP, JavaScript, TypeScript, Vue and Go, as a single static binary"
+  desc "Multi-language cognitive complexity linter, as a single static binary"
   homepage "https://github.com/ryckakas/bonsai-lint"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-aarch64-apple-darwin.tar.gz"
-      sha256 "2557aff1d276358d207521110c00a11945fd8e03243c584d4bf03a7f4739d6c4"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.0/bonsai-lint-aarch64-apple-darwin.tar.gz"
+      sha256 "511ff1cad6a1cfc6a94104ba6079fdab128783adafa8c12d5452334cecf59c23"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-x86_64-apple-darwin.tar.gz"
-      sha256 "73e945b6173558c5db7ceeb371ac2fb204e0a72250841ca6461f6ecee69868c4"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.0/bonsai-lint-x86_64-apple-darwin.tar.gz"
+      sha256 "151b510ce036bf2201b142fbe3fd1a612a22868e70901b4def441c37b4cb4dd8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "baa2940ed9fcdadc1dd20a5a983f47efc372e22f3438f58c82cb8e515216cae2"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.0/bonsai-lint-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d05969c191bc0148594d61922235f2d3cbc97085043f3b61ec2dd51613e61c7b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.3.0/bonsai-lint-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4c3e41151a0edadc3b835a55360768cd7a5824b4946b5fc32c3a3fde67785f6a"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.0/bonsai-lint-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "666e37b81b3837e0f30ac39ea0bf2783bb63dae62f9acc6ade70864e76664f75"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":               {},
+    "aarch64-unknown-linux-gnu":          {},
+    "aarch64-unknown-linux-musl-dynamic": {},
+    "aarch64-unknown-linux-musl-static":  {},
+    "x86_64-apple-darwin":                {},
+    "x86_64-pc-windows-gnu":              {},
+    "x86_64-unknown-linux-gnu":           {},
+    "x86_64-unknown-linux-musl-dynamic":  {},
+    "x86_64-unknown-linux-musl-static":   {},
   }.freeze
 
   def target_triple
