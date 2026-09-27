@@ -1,25 +1,25 @@
 class BonsaiLint < Formula
   desc "Multi-language cognitive complexity linter, as a single static binary"
   homepage "https://github.com/ryckakas/bonsai-lint"
-  version "0.4.2"
+  version "0.4.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.2/bonsai-lint-aarch64-apple-darwin.tar.gz"
-      sha256 "42addee6fcb53bd434c96e6a4df2359836140909a451938278a1bb25b6328777"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.3/bonsai-lint-aarch64-apple-darwin.tar.gz"
+      sha256 "56193625d451c2fd3c1cabd75c759a88c8404df54ad5629928c5e858bd843002"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.2/bonsai-lint-x86_64-apple-darwin.tar.gz"
-      sha256 "d24f09d3242b1ee9d49af63fa327eee394c2adcc5a811389e6a3ba0f99e7c5c2"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.3/bonsai-lint-x86_64-apple-darwin.tar.gz"
+      sha256 "11d61e74310f91b3a6aa1072d0fc9d5d6bf5a32825f8ec5b251941fd90ea16f6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.2/bonsai-lint-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6721953a851e8ecdafc66ee9c8d5eb912be2f0ba1ed472bd3a0454bfa0bab4bb"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.3/bonsai-lint-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a0585e912cc7959b291576d090f8ea99cde1faf07d70ea482aa16a0a76b6b741"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.2/bonsai-lint-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0460c7d534668d50c15b2c7d8a5914e5d66d4d678d7c752da6cb4dd12a1a4d48"
+      url "https://github.com/ryckakas/bonsai-lint/releases/download/v0.4.3/bonsai-lint-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1f713640c8606721aad1a640f583063cfb8a9c73f803025cb4aa5da82efd0044"
     end
   end
   license "MIT"
