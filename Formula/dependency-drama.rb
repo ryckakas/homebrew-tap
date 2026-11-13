@@ -1,25 +1,25 @@
 class DependencyDrama < Formula
   desc "Deadpan jokes about your dependencies, each one a true fact from the lockfile"
   homepage "https://github.com/ryckakas/dependency-drama#readme"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.0/dependency-drama-aarch64-apple-darwin.tar.xz"
-      sha256 "b6cdff0009e08f93f10b95256e6a37a8b4aeb3bc9e89b1d9021df4b7eaacd92a"
+      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.1/dependency-drama-aarch64-apple-darwin.tar.xz"
+      sha256 "4dd085cdfd837ccbd21045f8ec647718e9a165198f23867b7b202f22252d7a00"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.0/dependency-drama-x86_64-apple-darwin.tar.xz"
-      sha256 "ff94dd9e90e480336b19767e4ba51571807a5691c8b8b78aea0964771c0a6c98"
+      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.1/dependency-drama-x86_64-apple-darwin.tar.xz"
+      sha256 "3aac98fac5513477aeca2de9ec53ff701df30b5718981c39c3d5de47d9b66f6f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.0/dependency-drama-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9bf184f662be92b5b0bd7b96c8141ca70dcfa6651ade20e900970d16e1970c4e"
+      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.1/dependency-drama-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "50febafee6e1b743dddc363dd5a837ef9ee947e2a9999ea06479ee8e4ef69aab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.0/dependency-drama-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fc1539b14cbed54c90d96eab9afd038b859e9483f593246adef0019db039b6d3"
+      url "https://github.com/ryckakas/dependency-drama/releases/download/v0.1.1/dependency-drama-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fb165500eaa7d7eefcf169d52664e6c6f90a4c3eaa7eb4dc9c342685237109aa"
     end
   end
   license "MIT"
