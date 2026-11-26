@@ -1,8 +1,8 @@
 # The cask release.yml writes to ryckakas/homebrew-tap at every release, with the version and the
 # zip's checksum filled in. Change it here: the next release overwrites the tap's copy.
 cask "swarmed" do
-  version "0.4.7"
-  sha256 "4f8d20e680d1d4cc86132c7e236585ad33896e380c75526df69e9d80cc96395b"
+  version "0.4.8"
+  sha256 "79a8b03b20166900a4d66fde9fd1f3f3ecaf3afbc235fbc84218287f27c7c102"
 
   url "https://github.com/ryckakas/swarmed/releases/download/v#{version}/Swarmed-#{version}-macos-universal.zip"
   name "Swarmed"
